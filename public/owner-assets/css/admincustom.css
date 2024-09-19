@@ -1,0 +1,10 @@
+.customlisting .list-group-item{padding: 0.75rem 0.75rem;}
+.customlisting ul.list-group li {list-style: none;}
+.customlisting ul.list-group li a {list-style: none;padding: 8px 0;border-bottom: 1px dashed #cdcccc;color: #666262;display: block;position: relative;font-size: 16px;font-weight: 500;}
+.customlisting ul.list-group li:hover a {color: #0ec6d5;}
+.customlisting ul.list-group li a.active {color: #0ec6d5;}
+.customlisting ul.list-group li a i {position: absolute;top: 15px;right: 5px;}
+#invoice_collapse ul.list-group li a {padding-left: 10px;font-weight: normal; font-size: 14px;color: #7f7c7c;}
+.customlisting ul.list-group li:hover a {
+    color: #0ec6d5;
+}

@@ -1,0 +1,158 @@
+.mainshadowbox {
+    -webkit-box-pack: justify !important;
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: space-between !important;
+    width: 100% !important;
+    min-height: 156px !important;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px !important;
+    margin: 8px 0px !important;
+    padding: 16px !important;
+    border-radius: 12px !important;
+    text-decoration: none !important;
+}
+.mainshadowbox .fa {
+    margin-bottom: 20px;
+    display: block;
+    font-size: 25px;
+}
+.mainshadowbox strong {
+    font-size: 1.2rem !important;
+    line-height: 1.25rem !important;
+    color: rgb(34, 34, 34) !important;
+    font-weight: 600 !important;
+    height: auto !important;
+    margin-bottom: 10px !important;
+    display: block;
+}
+.mainshadowbox p{
+    font-size: 0.875rem !important;
+    line-height: 1.125rem !important;
+    color: rgb(113, 113, 113) !important;
+    font-weight: 400 !important;
+}
+
+.profileInfo_list{padding: 0px; margin: 0px;}
+.profileInfo_list li{list-style: none;}
+.profileInfo_list li strong {
+    display: block;
+    font-weight: normal;
+    font-size: 15px;
+    color: #222222;
+}
+.profileInfo_list li span {
+    color: #717171;
+}
+.profileInfo_list li {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #cdcccc;
+}
+
+.hideInfo label {
+    display: block;
+    border: 1px solid #cdcccc;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+.hideInfo small {
+    display: block;
+    line-height: 15px;
+}
+.hideInfo input[type="text"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.hideInfo label:focus-visible{
+  border-color: #000;
+}
+
+.hideInfo button {
+    border-radius: 8px;
+    padding: 10px 24px;
+    border: none;
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.travelright_sidebox{
+  border: 1px solid rgb(221, 221, 221) !important;
+  padding: 24px;
+  border-radius: 12px;
+}
+.travelright_sidebox .bnbrightside-box{
+  border-bottom: 1px solid rgb(221, 221, 221);
+}
+
+.bnbrightside-box h2 {
+    font-size: 22px;
+}
+.bnbrightside-box {
+    margin-top: 20px;
+}
+.bnbrightside-box h2 {
+    font-size: 22px;
+}
+.bnbrightside-box .fa{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #1e1d85;
+}
+
+.propertypayment h2 {
+    font-size: 26px;
+    letter-spacing: normal;
+    font-weight: 600;
+    margin: 0px;
+}
+.propertypayment ul {
+    padding: 0px 0px 10px;
+    margin: 0px 0px 10px;
+    border-bottom: 1px solid #cdcccc;
+}
+.propertypayment ul li {
+    list-style: none;
+    padding: 5px 0;
+    display: inline-block;
+    width: 49%;
+}
+.propertypayment ul li strong {
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    line-height: normal;
+}
+.propertypayment ul li span{
+    display: block;
+    font-size: 16px;
+}
+
+.pricebox {
+    margin-top: 20px;
+    border: 1px solid #cdcccc;
+    border-radius: 8px;
+}
+.priceboxone {
+    padding: 15px 15px;
+    border-bottom: 1px solid #cdcccc;
+}
+.priceboxone strong {
+    display: block;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.whychoose {
+    margin-top: 50px;
+    background: #f5f5f5;
+}
+

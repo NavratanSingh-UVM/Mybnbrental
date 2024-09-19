@@ -1,0 +1,6 @@
+@include('partner.layouts.header')
+@include('partner.layouts.sidebar')
+@include('partner.layouts.navbar')
+@yield('content')
+@include('partner.layouts.script')
+@include('partner.layouts.footer')
