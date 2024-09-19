@@ -34,7 +34,6 @@ use Illuminate\Support\Facades\Session;
 use Yajra\DataTables\Facades\DataTables;
 use App\Models\Tax;
 
-
 class DashboardController extends Controller
 {
     public function index() {
