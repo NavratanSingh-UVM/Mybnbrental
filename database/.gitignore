@@ -1,4 +1,10 @@
 *.sqlite*
-*.env
-*.env.example
-*.log
+/.phpunit.cache
+/node_modules
+/public/storage
+/vendor
+/storage/*.key
+.env
+.env.example
+/.vscode
+
