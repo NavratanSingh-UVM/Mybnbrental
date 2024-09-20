@@ -1,7 +1,6 @@
 <?php
 
 namespace App\Http\Controllers\Owner;
-
 use App\Http\Controllers\Controller;
 use App\Models\EmailTemplate;
 use Illuminate\Http\Request;
