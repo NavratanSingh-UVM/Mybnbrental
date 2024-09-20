@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Owner;
 
+
 use Carbon\Carbon;
 use App\Models\City;
 use App\Models\User;
