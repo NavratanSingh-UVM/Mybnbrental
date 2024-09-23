@@ -26,7 +26,7 @@
                                             <label for="property-photo">Property Photo</label>
                                             <div class="custom-file">
                                                 @if (!empty($propertyListing))
-                                                    <img src="{{ url('public/storage/upload/property_image/main_image/' . $propertyListing->property_main_photos) }}" alt="" srcset="" height="100" width="100">
+                                                    <img src="{{ url('storage/upload/property_image/main_image/' . $propertyListing->property_main_photos) }}" alt="" srcset="" height="100" width="100">
                                                     <input type="hidden" name="old_image" value="{{ $propertyListing->property_main_photos ?? '' }}">
                                                 @endif
                                                 <input type="file" class="form-control"  id="property-photo"  name="property_main_photo" accept=".png, .jpg, .jpeg, .jpg">

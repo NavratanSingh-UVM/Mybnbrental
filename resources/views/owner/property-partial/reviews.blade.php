@@ -80,7 +80,7 @@
                     <a href="javascript:void(0)" class="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button">
                         <span class="d-inline-block text-primary mr-2 fs-16"><i class="fal fa-long-arrow-left"></i></span>Prev step
                     </a>
-                    <button class="btn btn-lg btn-primary next-button mb-3 craete_property">
+                    <button class="btn btn-lg btn-primary next-button mb-3  craete_property">
                         @if (!empty($propertyListing))
                             Update Property
                         @else

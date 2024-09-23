@@ -1,4 +1,4 @@
 node_modules
-*.log
-*.env
-*env.example
+git rm --cached --.log;
+git rm --cached --.env;
+git rm --cached --.env.example;

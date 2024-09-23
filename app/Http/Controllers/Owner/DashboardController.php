@@ -108,7 +108,7 @@ class DashboardController extends Controller
                     return Helper::limit_text($row->property_name,2);
                 })
                 ->editColumn('property_main_photos',function($row) {
-                    return '<img src="'.url('public/storage/upload/property_image/main_image/'.$row->property_main_photos).'" class=" rounded-circle mr-3" height="50" width="50">';
+                    return '<img src="'.url('storage/upload/property_image/main_image/'.$row->property_main_photos).'" class=" rounded-circle mr-3" height="50" width="50">';
                 })
                 ->addColumn('action', function($row){
                     $actionBtn = '<a href="'.route('owner.create.property',['id'=>base64_encode($row->id)]).'" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm" onclick="propertyDelete('.$row->id.')">Delete</a>';

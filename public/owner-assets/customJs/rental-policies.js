@@ -46,12 +46,15 @@ $(".rental_policies").on("click",function(e){
             $prev.find('.nav-link').addClass('active');
             $nav_link.find('.number').html('<i class="fal fa-check text-primary"></i>');
             $parent.find('.number').html('<i class="fal fa-check text-primary"></i>');
-           }else if(res.status=='1' && res.msg=='create'){
-            toastr.success("Property Created Successfully !")
-            window.setTimeout(() => {
-                window.location.href=site_url+"/owner/my-property-listing"; 
-             }, 2000);
            }
         } 
     })
+    $(".craete_property").on("click",function(e) {
+        e.preventDefault();
+        toastr.success("Property Created Successfully !")
+        window.setTimeout(() => {
+            window.location.href=site_url+"/owner/my-property-listing"; 
+         }, 2000);
+    })
+    
 })

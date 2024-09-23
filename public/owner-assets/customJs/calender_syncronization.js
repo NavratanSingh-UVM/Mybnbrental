@@ -103,7 +103,6 @@ $(".sync_now").on("click",function () {
 
 $(".calender_syncronization").on("click",function(e){
     e.preventDefault();
-    console.log('hello');
     var $parent = $(this).parents('.tab-pane');
     $parent.removeClass('show active');
     $parent.next().addClass('show active');

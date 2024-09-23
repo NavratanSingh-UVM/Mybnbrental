@@ -329,8 +329,7 @@ class PropertyListingController extends Controller
             ]);
         elseif($check_create==null):
              return response()->json([
-                'property_id'=>$request->input('property_listing_id'),
-                'status'=>'1',
+                'status'=>'2',
                 'msg'=>'create'
             ]);  
         else:

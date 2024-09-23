@@ -85,7 +85,7 @@ let tables;
 
 $(".craete_property").on("click",function(e) {
     e.preventDefault();
-    toastr.success("Property Created Successfully !")
+    toastr.success("Property Update Successfully !")
     window.setTimeout(() => {
         window.location.href=site_url+"/owner/my-property-listing"; 
      }, 2000);
