@@ -16,7 +16,7 @@
                                             @if (auth()->user()->image ==null)
                                                 <img src="{{asset('owner-assets/img/agent-1.jpg')}}" alt="" srcset="">
                                             @else
-                                                <img src="{{ url('public/storage/profile_image/'.auth()->user()->image) }}" alt=" {{ Auth()->user()->name }}" class="rounded-circle">
+                                                <img src="{{ url('storage/profile_image/'.auth()->user()->image) }}" alt=" {{ Auth()->user()->name }}" class="rounded-circle">
                                             @endif
                                         </div>
                                         <span class="fs-13 font-weight-500 d-none d-sm-inline ml-2">

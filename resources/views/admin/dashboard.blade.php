@@ -252,7 +252,7 @@
                                             <tbody>
                                                 @foreach ($users as $user)
                                                     <tr>
-                                                        <td><img src="@if($user->image ==null){{ asset('assets/images/avatar/1.jpg') }} @else {{url('public/storage/profile_image/'.$user->image) }} @endif" class=" rounded-circle mr-3" alt="">{{$user->name}}</td>
+                                                        <td><img src="@if($user->image ==null){{ asset('assets/images/avatar/1.jpg') }} @else {{url('storage/profile_image/'.$user->image) }} @endif" class=" rounded-circle mr-3" alt="">{{$user->name}}</td>
                                                         <td>{{$user->email}}</td>
                                                         <td>
                                                             <span>{{$user->phone}}</span>

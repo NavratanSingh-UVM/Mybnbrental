@@ -55,7 +55,7 @@ class ProfileController extends Controller
                 return redirect()->back();
             }
         endif;
-        $path = storage_path('app/public/profile_image');
+        $path = public_path('storage/profile_image');
         if($request->hasFile('file')):
             $profileImage = time().uniqid().'.'.$request->file('file')->getClientOriginalExtension();
            $request->file('file')->move($path,$profileImage);

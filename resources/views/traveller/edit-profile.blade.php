@@ -15,7 +15,7 @@
                      <div class="row">
                         <div class="col-sm-6 col-xl-6 col-xxl-6">
                            @if(auth()->user()->image !=null)
-                           <img src="{{ url('public/storage/profile_image/'.auth()->user()->image) }}" alt="My Profile" class="w-25">
+                           <img src="{{ url('storage/profile_image/'.auth()->user()->image) }}" alt="My Profile" class="w-25">
                            @else
                            <img src="{{ asset('owner-assets/img/my-profile.png') }}" alt="My Profile" class="w-25">
                            @endif

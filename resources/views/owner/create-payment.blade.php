@@ -18,7 +18,7 @@
                             <div class="row">   
                                 <div class="form-group col-md-6 px-4">
                                     <label for="property" class="text-heading">Property</label>
-                                    <select name="property[]" id="property" class="form-control property" multiple onchange="calculatePrice()">
+                                    <select name="property[]" id="property" class="form-control select" multiple onchange="calculatePrice()">
                                         <option value="">Select Property</option>
                                         @foreach ($properties as $property)
                                             <option value="{{$property->id}}">{{$property->property_name}}</option>

@@ -101,7 +101,7 @@ class ProfileController extends Controller
                 'name'=>$user->name,
                 'email'=>$user->email,
                 'phone'=>$user->phone,
-                'image'=>$user->image !=null? url('public/storage/profile_image/'.$user->image):"",
+                'image'=>$user->image !=null? url('storage/profile_image/'.$user->image):"",
             ]
         ]);
     }

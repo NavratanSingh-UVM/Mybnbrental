@@ -115,7 +115,6 @@ $(".upload_gellery_image").on("click",async function(e) {
 			$parent.next().find('.collapsible').addClass('show');
 			var id = $parent.attr('id');
 			var $nav_link = $('a[href="#' + id + '"]');
-			console.log($nav_link);
 			$nav_link.removeClass('active');
 			$nav_link.find('.number').html($nav_link.data('number'));
 			var $prev = $nav_link.parent().next();

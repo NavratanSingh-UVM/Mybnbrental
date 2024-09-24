@@ -13,79 +13,11 @@
                 <div class="row">
                     <div class="col-lg-12">
                        <div class="card mb-6">
-                            <!--<div class="card-body p-6">-->
-                                <!--<div class="row">-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <label for="session_name">Season Name</label>-->
-                                <!--            <input type="text" name="session_name" class="form-control">-->
-                                <!--            <span class="session_name text-danger"></span>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <label for="from_date">Start Date</label>-->
-                                <!--            <input type="text" name="from_date" class="form-control" id="start_date" autocomplete="off" placeholder="mm/dd/yy">-->
-                                <!--            <span class="from_date text-danger"></span>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <label for="to_date">End Date</label>-->
-                                <!--            <input type="text" name="to_date" class="form-control" id="end_date" autocomplete="off" placeholder="mm/dd/yy">-->
-                                <!--            <span class="to_date text-danger"></span>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <label for="nightly_rate">Nightly Rate</label>-->
-                                <!--            <input type="text" name="nightly_rate" class="form-control">-->
-                                <!--            <span class="nightly_rate text-danger"></span>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <label for="minimum_stay">Minimum Stay</label>-->
-                                <!--            <input type="text" name="minimum_stay" class="form-control">-->
-                                <!--            <span class="minimum_stay text-danger"></span>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--    <div class="col-md-2">-->
-                                <!--        <div class="form-group">-->
-                                <!--            <button type="button" class="btn btn-primary add_rates" style="margin-top:32px;">Add Rates</button>-->
-                                <!--        </div>-->
-                                <!--    </div>-->
-                                <!--</div>-->
-                            <!--    <div class="table-responsive text-nowrap">-->
-                            <!--        <table class="table table-striped table-bordered" style="width: 100%" id="property_rates">-->
-                            <!--            <thead>-->
-                            <!--                <tr>-->
-                            <!--                    <th>Sr No.</th>-->
-                            <!--                    <th>Season Name</th>-->
-                            <!--                    <th>From Date</th>-->
-                            <!--                    <th>To Date</th>-->
-                            <!--                    <th>Nightly Rate</th>-->
-                            <!--                    <th>Minimum Stay</th>-->
-                            <!--                    <th>Action</th>-->
-                            <!--                </tr>-->
-                            <!--            </thead>-->
-                            <!--        </table>-->
-                            <!--    </div>-->
-                            <!--</div>-->
                             <div class="col-md-12">
                                 <h2>Fees - Define your fees, like cleaning, etc.</h2>
                             </div>
                             <div class="card-body p-6">
                                 <div class="row">
-                                    {{-- <div class="col-md-2">
-                                        <div class="form-group">
-                                            <label for="admin_fees">Admin Fee</label>
-                                            <input type="text" name="admin_fees"
-                                                class="form-control" id="admin_fees"
-                                                value="{{ $propertyListing->admin_fees ?? '' }}">
-                                            <span class="admin_fees text-danger"></span>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-md-2">
                                         <div class="form-group">
                                             <label for="cleaning_fees">Cleaning Fees</label>
@@ -100,13 +32,6 @@
                                             <span  class="refundable_damage_deposite text-danger"></span>
                                         </div>
                                     </div>
-                                    {{-- <div class="col-md-4">
-                                        <div class="form-group">
-                                            <label for="danage_waiver">Damage Waiver</label>
-                                            <input type="text" name="danage_waiver" class="form-control" id="danage_waiver" value="{{ $propertyListing->danage_waiver ?? '' }}">
-                                            <span class="danage_waiver text-danger"></span>
-                                        </div>
-                                    </div> --}}
                                     <div class="col-md-3">
                                         <div class="form-group">
                                             <label for="peet_fee">Pet Fee</label>
@@ -185,7 +110,6 @@
                                         <div class="form-group">
                                             <label for="tax_rates">Tax Rates (%)</label>
                                             <input  type="text" name="tax_rates" class="form-control" id="tax_rates" value="{{$tax->tax  ?? '' }}" disabled>  
-                                            <!--<input type="text" name="tax_rates" class="form-control" id="tax_rates" placeholder="Tax Rates(%)" value="{{ $propertyListing->tax_rates ?? '' }}">-->
                                             <span class="tax_rates text-danger"></span>
                                         </div>
                                     </div>

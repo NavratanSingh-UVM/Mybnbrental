@@ -93,7 +93,7 @@
 										@foreach ($partnerListing->partnerListingGalleryImage as $partnerListingGalleryImage)
 											<div class="box px-0">
 												<div class="card border-0">
-													<img src="{{url('/public/storage/upload/partner_listing/gallery_image/'.$partnerListingGalleryImage->image)}}" class="card-img" alt="">
+													<img src="{{url('/storage/upload/partner_listing/gallery_image/'.$partnerListingGalleryImage->image)}}" class="card-img" alt="">
 												</div>
 											</div>
 										@endforeach

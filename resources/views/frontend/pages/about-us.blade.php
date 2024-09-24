@@ -15,7 +15,7 @@
         <br>
           <div class="row">
               <div class="col-md-6">
-                  <img src="https://www.mybnbrentals.com/public/frontend-assets/img/gallery-08.jpg" >
+                  <img src="https://mybnbrentals.com/frontend-assets/img/gallery-08.jpg" >
               </div>
               <div class="col-md-6">
                   <h2 class="text-heading"> Who We Are:</h2>

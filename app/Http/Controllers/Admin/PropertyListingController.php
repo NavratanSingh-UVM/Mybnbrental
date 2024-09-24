@@ -53,7 +53,7 @@ class PropertyListingController extends Controller
                     endif;
                 })
                 ->editColumn('property_main_photos',function($row) {
-                    return '<img src="'.url('public/storage/upload/property_image/main_image/'.$row->property_main_photos).'" class=" rounded-circle mr-3" height="50" width="50">';
+                    return '<img src="'.url('storage/upload/property_image/main_image/'.$row->property_main_photos).'" class=" rounded-circle mr-3" height="50" width="50">';
                 })
                 ->addColumn('action', function($row){
                     $actionBtn = '<a href="'.route('admin.property.listing.create',['id'=>encrypt($row->id)]).'" class="edit btn btn-success btn-sm">Edit</a> <a href="javascript:void(0)" class="delete btn btn-danger btn-sm" onclick="propertyDelete('.$row->id.')">Delete</a>';
@@ -300,6 +300,7 @@ class PropertyListingController extends Controller
     }
 
     public function rentalPolicyStore(Request $request){
+
         $check_create =PropertyListing::where('id',$request->input('property_listing_id'))->pluck('cancelletion_policies_id')->first();
         $file_name = "";
         $cancel_rental_file_name ="";
@@ -321,17 +322,17 @@ class PropertyListingController extends Controller
             'upload_cancel_rental_polices'=>$cancel_rental_file_name,
             'cancelletion_policies_id'=>$request->input("cancel_rental_polices")
        ]);
-       if($propertyListing && $check_create==!null):
+       if($check_create==null):
+        return response()->json([
+            'status'=>'2',
+            'msg'=>"Property Created Successfully !"
+        ]);  
+        elseif($propertyListing && $check_create==!null):
             return response()->json([
                 'property_id'=>$request->input('property_listing_id'),
                 'status'=>'1',
                  'msg'=>'update'
             ]);
-        elseif($check_create==null):
-             return response()->json([
-                'status'=>'2',
-                'msg'=>'create'
-            ]);  
         else:
             return response()->json([
                 'status'=>'0'
@@ -357,17 +358,18 @@ class PropertyListingController extends Controller
             ]);
         endif;
     }
+
     public function galleryImageStore(Request $request){
-    //  $validator = Validator::make($request->all(), [
-    //         'files.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:8192',
-    //     ]);
+     $validator = Validator::make($request->all(), [
+            'files.*' => 'required|image|mimes:jpeg,png,jpg,gif|max:8192',
+        ]);
         
-    //     if ($validator->fails()) {
-    //         return response()->json([ 
-    //              'status'=>'500',
-    //             'msg'=>"image is very larg"
-    //          ],500);
-    //      }
+        if ($validator->fails()) {
+            return response()->json([ 
+                 'status'=>'500',
+                'msg'=>"image is very larg"
+             ],500);
+         }
        $propertyListing ='';
         if($request->TotalFiles > 0){
           for($x = 0; $x < $request->TotalFiles; $x++){
@@ -742,7 +744,7 @@ class PropertyListingController extends Controller
             $data = [
                 'id'=>$propertyGalleryImage->id,
                 'property_id'=>$propertyGalleryImage->property_id,
-                'url'=> url('public/storage/upload/property_image/gallery_image/'.$propertyGalleryImage->image_name)
+                'url'=> url('storage/upload/property_image/gallery_image/'.$propertyGalleryImage->image_name)
             ];
             $galleryImage[]=$data;
         endforeach;

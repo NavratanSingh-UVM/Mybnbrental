@@ -68,6 +68,7 @@ class PaymentController extends Controller
             'type'=>'2',
             'payment_status'=>'pending'
         ]);
+      
         if($packages):
                 return response()->json([
                     'msg'=>"Payment Added Successfully,Please Wait Redirecting",

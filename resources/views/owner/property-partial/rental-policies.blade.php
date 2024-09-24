@@ -42,7 +42,7 @@
                     <a href="javascript:void(0)" class="btn btn-lg bg-hover-white border rounded-lg mb-3 mr-auto prev-button">
                         <span class="d-inline-block text-primary mr-2 fs-16"><i class="fal fa-long-arrow-left"></i></span>Prev step
                     </a>
-                    <button class="btn btn-lg btn-primary next-button mb-3 rental_policies {{ (empty($propertyListing)) ? 'craete_property':''}} ">@if(!empty($propertyListing)) Update Next @else Create Property @endif
+                    <button class="btn btn-lg btn-primary next-button mb-3 rental_policies">@if(!empty($propertyListing)) Update Next @else Create Property @endif
                         <span class="d-inline-block ml-2 fs-16">
                             <i class="fal fa-long-arrow-right"></i>
                         </span>
