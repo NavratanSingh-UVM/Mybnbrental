@@ -1,4 +1,7 @@
-node_modules
-git rm --cached --.log;
-git rm --cached --.env;
-git rm --cached --.env.example;
+/node_modules
+.log;
+.env;
+/vendor;
+/public/storage
+Homestead.json
+Homestead.yaml
