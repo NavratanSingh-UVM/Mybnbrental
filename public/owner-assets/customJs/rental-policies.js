@@ -31,25 +31,23 @@ $(".rental_policies").on("click",function(e){
         data: formData,
         success:function(res){
            hideLoader();
-           console.log(res);
-        //    if(res.status=='1'){
-        //     $parent.removeClass('show active');
-        //     $parent.next().addClass('show active');
-        //     $parent.find('.collapsible').removeClass('show');
-        //     $parent.next().find('.collapsible').addClass('show');
-        //     var id = $parent.attr('id');
-        //     var $nav_link = $('a[href="#' + id + '"]');
-        //     $nav_link.removeClass('active');
-        //     $nav_link.find('.number').html($nav_link.data('number'));
-        //     var $prev = $nav_link.parent().next();
-        //     $prev.find('.nav-link').addClass('active');
-        //     $nav_link.find('.number').html('<i class="fal fa-check text-primary"></i>');
-        //     $parent.find('.number').html('<i class="fal fa-check text-primary"></i>');
-        //    } else 
-        //    if(res.status == '2'){
-        //         toastr.success(res.msg);
-        //         window.location.href = site_url + "/owner/my-property-listing";
-        //    }
+           if(res.status=='1'){
+            // $parent.removeClass('show active');
+            // $parent.next().addClass('show active');
+            // $parent.find('.collapsible').removeClass('show');
+            // $parent.next().find('.collapsible').addClass('show');
+            // var id = $parent.attr('id');
+            // var $nav_link = $('a[href="#' + id + '"]');
+            // $nav_link.removeClass('active');
+            // $nav_link.find('.number').html($nav_link.data('number'));
+            // var $prev = $nav_link.parent().next();
+            // $prev.find('.nav-link').addClass('active');
+            // $nav_link.find('.number').html('<i class="fal fa-check text-primary"></i>');
+            // $parent.find('.number').html('<i class="fal fa-check text-primary"></i>');
+           } else if(res.status == '2'){
+                toastr.success(res.msg);
+                window.location.href = site_url + "/owner/my-property-listing";
+           }
         } 
     })  
 })
